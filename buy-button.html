@@ -1,4 +1,4 @@
-<div id='product-component-1727363786234'></div>
+<div id='collection-component-1727365911044'></div>
 <script type="text/javascript">
     /*<![CDATA[*/
     (function () {
@@ -12,7 +12,6 @@
         } else {
             loadScript();
         }
-
         function loadScript() {
             var script = document.createElement('script');
             script.async = true;
@@ -20,16 +19,15 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
             script.onload = ShopifyBuyInit;
         }
-
         function ShopifyBuyInit() {
             var client = ShopifyBuy.buildClient({
                 domain: '7d7095-03.myshopify.com',
                 storefrontAccessToken: 'c56d65e5e31cd8919e1fa3e7218c5703',
             });
             ShopifyBuy.UI.onReady(client).then(function (ui) {
-                ui.createComponent('product', {
-                    id: '9322183491913',
-                    node: document.getElementById('product-component-1727363786234'),
+                ui.createComponent('collection', {
+                    id: '648481046857',
+                    node: document.getElementById('collection-component-1727365911044'),
                     moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
                     options: {
                         "product": {
@@ -38,7 +36,20 @@
                                     "@media (min-width: 601px)": {
                                         "max-width": "calc(25% - 20px)",
                                         "margin-left": "20px",
-                                        "margin-bottom": "50px"
+                                        "margin-bottom": "50px",
+                                        "width": "calc(25% - 20px)"
+                                    },
+                                    "img": {
+                                        "height": "calc(100% - 15px)",
+                                        "position": "absolute",
+                                        "left": "0",
+                                        "right": "0",
+                                        "top": "0"
+                                    },
+                                    "imgWrapper": {
+                                        "padding-top": "calc(75% + 15px)",
+                                        "position": "relative",
+                                        "height": "0"
                                     }
                                 }
                             },
