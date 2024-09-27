@@ -1,0 +1,15 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 60px;
+    background: rgb(255, 203, 0);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+header img {
+    height: 100%;
+}
